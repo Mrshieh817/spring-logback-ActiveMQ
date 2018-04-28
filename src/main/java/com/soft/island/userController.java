@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 * @version 创建时间：2018年4月28日 上午11:27:32
 * 类说明
 */
-
 @Controller
 @RequestMapping(value = "/user")
 public class userController {
