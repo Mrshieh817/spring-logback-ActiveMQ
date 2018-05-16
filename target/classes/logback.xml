@@ -2,16 +2,14 @@
 <configuration scan="true" scanPeriod="60 seconds" debug="false">
 	<!-- 日志输出路径，自定义 -->
 	<property name="LOG_HOME" value="${catalina.base}/logs/SoftislandLog/" />
-	
-	<!-- <appender name="ch.qos.logback.classic.net.JMSQueueAppender">
-	
-	</appender> -->
-	
-	<appender name="OwnInfo" class="com.soft.Logback.Logback_xcf">
+
+	<!-- <appender name="ch.qos.logback.classic.net.JMSQueueAppender"> </appender> -->
+
+	<!-- <appender name="OwnInfo" class="com.soft.Logback.Logback_xcf">
 		<providerURL>tcp://192.168.139.128:61616</providerURL>
 		<Account>admin</Account>
 		<Password>admin</Password>
-	</appender>
+	</appender> -->
 
 	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
 		<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
@@ -37,11 +35,11 @@
 		<appender-ref ref="STDOUT" />
 	</root>
 	<!-- 指定某个类的日志级别及记录 -->
-	<logger name="com.soft.island.HomeController" level="ERROR">
+<!-- 	<logger name="com.soft.island.HomeController" level="ERROR">
 		<appender-ref ref="FILE" />
 	</logger>
 	<logger name="com.soft.island.userController" level="INFO">
 		<appender-ref ref="OwnInfo" />
-	</logger>
+	</logger> -->
 
 </configuration>  

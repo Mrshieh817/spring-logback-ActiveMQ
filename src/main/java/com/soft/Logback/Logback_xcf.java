@@ -83,7 +83,6 @@ public class Logback_xcf extends AppenderBase<LoggingEvent> implements MessageLi
 
 	@Override
 	public void onMessage(Message message) {
-		// TODO Auto-generated method stub
-
+	
 	}
 }
