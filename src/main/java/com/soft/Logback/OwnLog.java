@@ -25,7 +25,7 @@ public class OwnLog extends AppenderBase<LoggingEvent> {
 	Session session;
 	ThreadLocal<MessageProducer> threadLocal = new ThreadLocal<>();
 	private static Destination destination;
-
+ 
 	public OwnLog() throws Exception {
 		connectionFactory = new ActiveMQConnectionFactory("admin", "admin", "tcp://192.168.139.128:61616");
 		connection = connectionFactory.createConnection();
