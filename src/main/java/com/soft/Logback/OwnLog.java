@@ -18,7 +18,7 @@ import ch.qos.logback.core.AppenderBase;
  * @version 创建时间：2018年4月28日 上午10:28:11 类说明(测试用例)
  */
 
-public class OwnLog extends AppenderBase<LoggingEvent> implements MessageListener {
+public class OwnLog extends AppenderBase<LoggingEvent> {
 	// (测试用例)
 	ConnectionFactory connectionFactory;
 	Connection connection;
@@ -55,11 +55,5 @@ public class OwnLog extends AppenderBase<LoggingEvent> implements MessageListene
 		}
 		System.out.println("Received log [" + eventObject.getLevel() + "]: " + eventObject.getMessage());
 		System.out.println("自定义的哦！！！" + eventObject.getMessage());
-	}
-
-	@Override
-	public void onMessage(javax.jms.Message message) {
-		// TODO Auto-generated method stub
-
 	}
 }

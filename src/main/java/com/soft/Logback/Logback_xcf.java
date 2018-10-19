@@ -17,8 +17,8 @@ import ch.qos.logback.core.AppenderBase;
  * @author 作者:大飞
  * @version 创建时间：2018年4月28日 上午10:28:11 类说明
  */
-
-public class Logback_xcf extends AppenderBase<LoggingEvent> implements MessageListener {
+//implements MessageListener Activwmq的消息订阅 监听接口 继承后
+public class Logback_xcf extends AppenderBase<LoggingEvent> implements MessageListener{
 	public String providerURL;
 	private String Account;
 	private String Password; 

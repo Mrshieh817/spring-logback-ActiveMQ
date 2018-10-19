@@ -39,7 +39,7 @@
 
 	<!-- 控制台输出日志级别全局 -->
 	<root>
-		<level value="DEBUG" />
+		<level value="INFO" />
 		<appender-ref ref="STDOUT" />
 	</root>
 	<!-- 指定某个类的日志级别及记录 -->
